@@ -1,8 +1,13 @@
+import HelloBtn from "./Components/HelloBtn"
 function App() {
 
   return (
     <>
-     <h1 className="bg-amber-50">HOLA</h1>
+     
+     <main className="pt-20">
+       <HelloBtn />
+     </main>
+
     </>
   )
 }
