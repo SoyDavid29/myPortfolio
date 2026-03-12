@@ -1,3 +1,4 @@
+import Proyects from "../db/ProyectsDb";
 const ProyectCard: React.FC= () => {
 
     return(
