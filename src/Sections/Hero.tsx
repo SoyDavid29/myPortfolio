@@ -1,4 +1,12 @@
 import { motion } from "framer-motion";
+import PhotoCard from "../Components/PhotoCard";
+
+const images = [
+    "src/assets/frame1.png",
+    "src/assets/frame2.png",
+    "src/assets/frame3.png",
+    "src/assets/frame4.png",
+];
 
 const Hero: React.FC = () => {
     return (
@@ -50,7 +58,17 @@ const Hero: React.FC = () => {
                     as a freelancer and I've collaborated on exciting projects.
                 </p>
             </article>
-            
+
+            <article className="flex flex-col items-center w-full gap-3 mt-4">
+
+                <h2 className="font-poppins font-semibold text-gray-400" >AMAZING DESIGNS FOR EVERY DEVICE</h2>
+
+                <a className="bg-yellow-300 rounded-lg shadow-lg flex justify-center items-center font-poppins font-semibold px-4 py-2.5" href="#proyects">Take a look!!</a>
+
+                <PhotoCard images={images} />
+
+            </article>
+
         </section>
     );
 };
