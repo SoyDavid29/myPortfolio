@@ -1,7 +1,9 @@
 const ProyectCard: React.FC= () => {
 
     return(
-        <aside></aside>
+        <aside>
+            
+        </aside>
     );
 
 } 
