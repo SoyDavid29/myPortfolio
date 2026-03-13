@@ -1,4 +1,4 @@
-export interface Proyect {
+export interface Project {
     id: number;
     img: string;
     tittle: string;
@@ -6,7 +6,7 @@ export interface Proyect {
     link: string;
 }
 
-const ProyectsDb: Proyect[] = [
+const ProjectsDb: Project[] = [
 
 {
 id: 1, 
@@ -34,4 +34,4 @@ link: 'https://www.fundacionmgas.com'
 
 ];
 
-export default ProyectsDb;
+export default ProjectsDb;
