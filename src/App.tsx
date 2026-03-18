@@ -3,6 +3,7 @@ import Hero from "./Sections/Hero"
 import Projects from "./Sections/Projects"
 import ProjectsDb from "./db/ProjectsDb"
 import AboutMe from "./Sections/AboutMe"
+import Technologies from "./Sections/Technologies"
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <Projects items={ProjectsDb}/>
         <AboutMe />
+        <Technologies />
       </main>
 
     </>
