@@ -1,7 +1,7 @@
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-800 text-white py-4 text-center">
-        <p>&copy; {new Date().getFullYear()} Your Company. All rights reserved.</p>
+    <footer className="bg-[#000000] text-white py-4 text-center mt-10">
+        <p>&copy; {new Date().getFullYear()} David Rodríguez. All rights reserved.</p>
     </footer>
   );
 };

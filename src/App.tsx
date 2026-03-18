@@ -5,6 +5,7 @@ import ProjectsDb from "./db/ProjectsDb"
 import AboutMe from "./Sections/AboutMe"
 import Technologies from "./Sections/Technologies"
 import Contact from "./Sections/Contact"
+import Footer from "./Sections/Footer"
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <AboutMe />
         <Technologies />
         <Contact />
+        <Footer />
       </main>
 
     </>
