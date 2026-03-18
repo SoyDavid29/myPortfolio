@@ -53,9 +53,7 @@ const Hero: React.FC = () => {
                     Hello everyone, my name is David Rodriguez
                 </p>
                 <p className="font-poppins font-medium text-center leading-relaxed">
-                    I am a passionate person who loves Design. I turn ideas into
-                    solid websites and applications. Currently, I've been working
-                    as a freelancer and I've collaborated on exciting projects.
+                    I'm a web developer with 3+ years of experience, passionate about crafting powerful, responsive websites and applications. Currently focused on Frontend development and UI/UX Design, using the latest technologies to build experiences that look great on any device
                 </p>
             </article>
 
