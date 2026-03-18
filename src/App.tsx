@@ -2,6 +2,7 @@ import HelloBtn from "./Components/HelloBtn"
 import Hero from "./Sections/Hero"
 import Projects from "./Sections/Projects"
 import ProjectsDb from "./db/ProjectsDb"
+import AboutMe from "./Sections/AboutMe"
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <HelloBtn />
         <Hero />
         <Projects items={ProjectsDb}/>
+        <AboutMe />
       </main>
 
     </>
