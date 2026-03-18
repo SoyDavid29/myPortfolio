@@ -4,6 +4,7 @@ import Projects from "./Sections/Projects"
 import ProjectsDb from "./db/ProjectsDb"
 import AboutMe from "./Sections/AboutMe"
 import Technologies from "./Sections/Technologies"
+import Contact from "./Sections/Contact"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Projects items={ProjectsDb}/>
         <AboutMe />
         <Technologies />
+        <Contact />
       </main>
 
     </>
