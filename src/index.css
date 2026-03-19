@@ -6,3 +6,12 @@
   --shadow-custom: 0px 1px 3px #421C1C;
   --color-btn: #00FF1E;
 }
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-8deg); }
+  50%       { transform: rotate(8deg); }
+}
+
+@utility animate-wiggle {
+  animation: wiggle 1.5s ease-in-out infinite;
+}
