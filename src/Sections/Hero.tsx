@@ -1,11 +1,16 @@
 import { motion } from "framer-motion";
 import PhotoCard from "../Components/PhotoCard";
 
+import frame1 from "../assets/frame1.png";
+import frame2 from "../assets/frame2.png";
+import frame3 from "../assets/frame3.png";
+import frame4 from "../assets/frame4.png";
+
 const images = [
-    "src/assets/frame1.png",
-    "src/assets/frame2.png",
-    "src/assets/frame3.png",
-    "src/assets/frame4.png",
+    frame1,
+    frame2,
+    frame3,
+    frame4,
 ];
 
 const Hero: React.FC = () => {
