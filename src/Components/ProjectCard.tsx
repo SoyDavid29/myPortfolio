@@ -1,5 +1,11 @@
 import type { Project } from "../db/ProjectsDb";
 
+import typescript from "../assets/typescriptlogo.png";
+import react from "../assets/reactlogo.png";
+import tailwind from "../assets/tailwind.png";
+import github from "../assets/githublogo.png";
+import git from "../assets/gitlogo.png";
+
 const ProjectCard: React.FC<Project> = ({ img, tittle, description, link }) => {
 
     return (
@@ -7,14 +13,14 @@ const ProjectCard: React.FC<Project> = ({ img, tittle, description, link }) => {
 
             <div className="flex justify-between items-center">
                 <div className="flex jaustify-start gap-2">
-                    <img className="w-4.5 h-4.5"  src="src/assets/typescriptlogo.png" alt="" />
-                    <img className="w-5 h-5"  src="src/assets/reactlogo.png" alt="" />
-                    <img className="w-8 h-4.5" src="src/assets/tailwind.png" alt="" />
+                    <img className="w-4.5 h-4.5"  src={typescript} alt="" />
+                    <img className="w-5 h-5"  src={react} alt="" />
+                    <img className="w-8 h-4.5" src={tailwind} alt="" />
                 </div>
 
                 <div className="flex items-center gap-2">
-                    <img  className="w-4.5 h-4.5 text-amber-50" src="src/assets/githublogo.png" alt="" />
-                    <a href={link}><img className="w-7 h-7 animate-wiggle" src="src/assets/wwwlogo.png" alt="" /></a>
+                    <img  className="w-4.5 h-4.5 text-amber-50" src={github} alt="" />
+                    <a href={link}><img className="w-7 h-7 animate-wiggle" src={git} alt="" /></a>
                 </div>
 
             </div>
