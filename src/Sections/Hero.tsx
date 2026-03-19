@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
 
             <article className="flex flex-col items-center w-full gap-3 mt-4">
 
-                <h2 className="font-poppins font-semibold text-gray-400" >AMAZING DESIGNS FOR EVERY DEVICE</h2>
+                <h2 className="font-poppins font-semibold text-gray-400" >Interfaces That Work on Every Screen</h2>
 
                 <a className="bg-yellow-300 rounded-lg shadow-lg flex justify-center items-center font-poppins font-semibold px-4 py-2.5" href="#proyects">Take a look!!</a>
 

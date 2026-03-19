@@ -40,7 +40,7 @@ const HelloBtn: React.FC = () => {
           >
             <a href="#contact" className="py-2 hover:bg-zinc-800 transition-colors">Contact</a>
             <a href="#projects" className="py-2 hover:bg-zinc-800 transition-colors">Projects</a>
-            <a href="#about" className="py-2 hover:bg-zinc-800 transition-colors">About me</a>
+            <a href="#aboutme" className="py-2 hover:bg-zinc-800 transition-colors">About me</a>
           </motion.div>
         )}
       </AnimatePresence>
