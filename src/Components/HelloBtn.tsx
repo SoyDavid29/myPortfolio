@@ -6,12 +6,18 @@ import clickIcon from "../assets/clickon.png";
 const HelloBtn: React.FC = () => {
   const [view, setView] = useState(false);
 
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
+
   return (
     <motion.div
       // This makes the container animate its own height automatically
       layout
       onClick={() => setView(!view)}
-      className="bg-black text-white font-poppins font-semibold w-40 cursor-pointer overflow-hidden rounded-xl shadow-lg flex flex-col items-center justify-center m-auto fixed top-10 left-0 right-0 z-99"
+      className="bg-black text-white font-poppins font-semibold w-40 cursor-pointer rounded-xl shadow-lg flex flex-col items-center justify-center m-auto fixed top-10 left-0 right-0 z-99"
       style={{ minHeight: "2.5rem" }} // Equivalent to h-10
     >
       <AnimatePresence mode="wait">
@@ -26,7 +32,7 @@ const HelloBtn: React.FC = () => {
           >
             Hey there!
             <span className="ml-2">
-              <img src={clickIcon} alt="logo click" className="w-4 h-4" />
+              <img src={clickIcon} alt="logo click" className="w-3 h-4" />
             </span>
           </motion.div>
         ) : (
@@ -38,9 +44,10 @@ const HelloBtn: React.FC = () => {
             exit={{ opacity: 0, y: -10 }}
             className="flex flex-col w-full text-center"
           >
-            <a href="#contact" className="py-2 hover:bg-zinc-800 transition-colors">Contact</a>
-            <a href="#projects" className="py-2 hover:bg-zinc-800 transition-colors">Projects</a>
-            <a href="#aboutme" className="py-2 hover:bg-zinc-800 transition-colors">About me</a>
+            <a href="#start" onClick={(e) => handleScroll(e, "start")} className="py-2 hover:bg-zinc-800 transition-colors">Start</a>
+            <a href="#contact" onClick={(e) => handleScroll(e, "contact")} className="py-2 hover:bg-zinc-800 transition-colors">Contact</a>
+            <a href="#projects" onClick={(e) => handleScroll(e, "projects")} className="py-2 hover:bg-zinc-800 transition-colors">Projects</a>
+            <a href="#aboutme" onClick={(e) => handleScroll(e, "aboutme")} className="py-2 hover:bg-zinc-800 transition-colors">About me</a>
           </motion.div>
         )}
       </AnimatePresence>

@@ -17,7 +17,7 @@ const images = [
 
 const Hero: React.FC = () => {
     return (
-        <section className="pt-10 flex flex-col items-center justify-center">
+        <section className="pt-10 flex flex-col items-center justify-center" id="start">
 
             <article className="flex flex-col items-center">
 

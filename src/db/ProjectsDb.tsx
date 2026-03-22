@@ -29,7 +29,7 @@ id: 3,
 img: 'img/fundacion.png', 
 tittle: 'Fundación MGAS', 
 description: 'A proyect of my Social Service, this website is a landing page where it shows informaction of this fundation', 
-link: 'https://www.fundacionmgas.org.com'  
+link: 'https://fundacionmgas.org.mx/'  
 },
 
 ];
