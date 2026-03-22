@@ -15,7 +15,7 @@ tittle: 'OurSpace',
 description: `This is my personal brand called OurSpace 
 a website for show my work as front-end developer and 
 UX/UI Designer`, 
-link: 'https://www.ourspace.com'  
+link: 'https://www.ourspacesite.com'  
 },
 {
 id: 2, 
@@ -29,7 +29,7 @@ id: 3,
 img: 'img/fundacion.png', 
 tittle: 'Fundación MGAS', 
 description: 'A proyect of my Social Service, this website is a landing page where it shows informaction of this fundation', 
-link: 'https://www.fundacionmgas.com'  
+link: 'https://www.fundacionmgas.org.com'  
 },
 
 ];
