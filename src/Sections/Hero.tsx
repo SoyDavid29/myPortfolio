@@ -2,15 +2,17 @@ import { motion } from "framer-motion";
 import PhotoCard from "../Components/PhotoCard";
 
 import frame1 from "../assets/frame1.png";
-import frame2 from "../assets/Frame2.png";
-import frame3 from "../assets/Frame3.png";
-import frame4 from "../assets/Frame4.png";
+import frame2 from "../assets/frame2.png";
+import frame3 from "../assets/frame3.png";
+import frame4 from "../assets/frame4.png";
+import frame5 from "../assets/frame5.png";
 
 const images = [
     frame1,
     frame2,
     frame3,
     frame4,
+    frame5,
 ];
 
 const Hero: React.FC = () => {
@@ -22,7 +24,7 @@ const Hero: React.FC = () => {
                 <div className="relative flex items-center justify-center mb-8">
 
                     {/* --- THE PULSING RINGS --- */}
-                    {[0, 1, 2].map((i) => (
+                    {[0, 1, 2, 3].map((i) => (
                         <motion.div
                             key={i}
                             className="absolute rounded-full bg-green-400/45"
@@ -62,11 +64,11 @@ const Hero: React.FC = () => {
                 </p>
             </article>
 
-            <article className="flex flex-col items-center w-full gap-3 mt-4">
+            <article className="flex flex-col items-center w-full gap-4 mt-4">
 
                 <h2 className="font-poppins font-semibold text-gray-400" >Interfaces That Work on Every Screen</h2>
 
-                <a className="bg-yellow-300 rounded-lg shadow-lg flex justify-center items-center font-poppins font-semibold px-4 py-2.5" href="#proyects">Take a look!!</a>
+                <a className="bg-yellow-300 rounded-lg shadow-lg flex justify-center items-center font-poppins font-semibold px-4 py-2.5" href="#projects">Take a look!!</a>
 
                 <PhotoCard images={images} />
 
