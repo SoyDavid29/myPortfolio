@@ -17,7 +17,7 @@ const HelloBtn: React.FC = () => {
       // This makes the container animate its own height automatically
       layout
       onClick={() => setView(!view)}
-      className="bg-black text-white font-poppins font-semibold w-40 cursor-pointer rounded-xl shadow-lg flex flex-col items-center justify-center m-auto fixed top-10 left-0 right-0 z-99"
+      className="bg-black text-white font-poppins font-semibold w-40 cursor-pointer rounded-xl shadow-lg flex flex-col items-center justify-center m-auto fixed top-9.5 left-0 right-0 z-99"
       style={{ minHeight: "2.5rem" }} // Equivalent to h-10
     >
       <AnimatePresence mode="wait">
