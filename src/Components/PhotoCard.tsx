@@ -8,7 +8,7 @@ type CarouselProps = {
 export default function PhotoCard({ images }: CarouselProps) {
     const [index, setIndex] = useState(0);
 
-    // auto-loop every 2 seconds
+    // auto-loop every 4 seconds
     useEffect(() => {
         const id = setInterval(() => {
             setIndex((prev) => (prev + 1) % images.length);
@@ -26,14 +26,7 @@ export default function PhotoCard({ images }: CarouselProps) {
             }}
         >
             {images.map((src, i) => {
-                // Calculate relative position
                 const relative = (i - index + images.length) % images.length;
-
-                // Position states:
-                // 0 → center
-                // 1 → right tilted
-                // 2 → left tilted
-                // (for more images, it keeps cycling)
 
                 let x = 0;
                 let rotate = 0;
@@ -45,24 +38,30 @@ export default function PhotoCard({ images }: CarouselProps) {
                     rotate = 0;
                     zIndex = 3;
 
-                    /* states of figma animation */
-
                 } else if (relative === 1) {
                     // Next image → right + tilt
                     x = 500;
                     rotate = 180;
                     zIndex = 2;
+
                 } else if (relative === images.length - 1) {
-                    // Previous image → left - tilt
+                    // Previous image → left + tilt
                     x = -500;
                     rotate = -180;
                     zIndex = 1;
+
                 } else {
-                    // Everything else stays hidden far away
-                    x = -500;
-                    rotate = -180;
+                    // ✅ All in-between images → hidden off screen to the right
+                    x = 500;
+                    rotate = 180;
                     zIndex = 0;
                 }
+
+                // ✅ Only show center, right, and left images
+                const isVisible =
+                    relative === 0 ||
+                    relative === 1 ||
+                    relative === images.length - 1;
 
                 return (
                     <motion.img
@@ -75,7 +74,7 @@ export default function PhotoCard({ images }: CarouselProps) {
                             objectFit: "cover",
                             zIndex,
                         }}
-                        animate={{ x, rotate, opacity: relative > 2 ? 0 : 1 }}
+                        animate={{ x, rotate, opacity: isVisible ? 1 : 0 }}
                         transition={{
                             duration: 0.8,
                             type: "spring",

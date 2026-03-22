@@ -4,7 +4,7 @@ import typescript from "../assets/typescriptlogo.png";
 import react from "../assets/reactlogo.png";
 import tailwind from "../assets/tailwind.png";
 import github from "../assets/githublogo.png";
-import git from "../assets/gitlogo.png";
+import www from "../assets/wwwlogo.png";
 
 const ProjectCard: React.FC<Project> = ({ img, tittle, description, link }) => {
 
@@ -20,7 +20,7 @@ const ProjectCard: React.FC<Project> = ({ img, tittle, description, link }) => {
 
                 <div className="flex items-center gap-2">
                     <img  className="w-4.5 h-4.5 text-amber-50" src={github} alt="" />
-                    <a href={link}><img className="w-7 h-7 animate-wiggle" src={git} alt="" /></a>
+                    <a href={link}><img className="w-8 h-8 animate-wiggle object-cover" src={www} alt="" /></a>
                 </div>
 
             </div>

@@ -18,8 +18,8 @@ const AbautMe: React.FC = () => {
             </p>
 
             <div className="w-full h-auto flex justify-between items-center px-5">
-                <a href="https://www.linkedin.com/in/david-hernandez-ortiz/"><img className="w-16 h-4 animate-wiggle" src={linkedin} alt="linkedin logo" /></a>
-                <a href="https://www.linkedin.com/in/david-hernandez-ortiz/"><img className="w-4 h-4 animate-wiggle" src={gmail} alt="gmail logo" /></a>
+                <a href="https://www.linkedin.com/in/soydavidr/"><img className="w-16 h-4 animate-wiggle" src={linkedin} alt="linkedin logo" /></a>
+                <a href="mailto:daviswebdesigner@gmail.com"><img className="w-4 h-4 animate-wiggle" src={gmail} alt="gmail logo" /></a>
             </div>
 
         </section>
