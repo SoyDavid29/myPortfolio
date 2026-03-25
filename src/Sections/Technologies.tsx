@@ -78,7 +78,7 @@ const Technologies: React.FC = () => {
 
     return (
         <section
-            className="mt-10 pt-10 px-10 flex flex-col items-center justify-center gap-5 bg-[#FEE349] shadow-lg"
+            className=" overflow-hidden w-full mt-10 pt-10 px-10 flex flex-col items-center justify-center gap-5 bg-[#FEE349] shadow-lg"
             id="technologies"
         >
             <h2 className="font-poppins font-semibold text-2xl text-center">
@@ -92,7 +92,7 @@ const Technologies: React.FC = () => {
             {/* This motion.div is the "conductor" — it controls the stagger */}
             <motion.div
                 ref={ref}
-                className="w-full h-auto flex items-center justify-center gap-5 flex-wrap pb-4"
+                className="overflow-hidden w-full h-auto flex items-center justify-center gap-5 flex-wrap pb-4"
                 variants={containerVariants}
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}

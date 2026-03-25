@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+* {
+ 
+  box-sizing: border-box;
+}
+
 @theme{
   --font-poppins: Poppins, sans-serif;
   --breakpoint-xs: 364px;
