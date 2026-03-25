@@ -25,12 +25,12 @@ const Hero: React.FC = () => {
         target: tittleRef,
         offset: ["start end", "end start"], // element start to end relative to viewport
     });
-    const scale = useTransform(scrollYProgress, [0, 1], [1, 1.5]); // 1 → 2
+    const scale = useTransform(scrollYProgress, [0, 1], [1, 1.5]); // 1 → 1.5
     const opacity = useTransform(scrollYProgress, [0.9, 1, 1], [1, 0.2, 0]); // 1 → 0.4 → 0 
 
 
     return (
-        <section className="pt-10 flex flex-col items-center justify-center" id="start">
+        <section className=" w-full h-auto pt-10 flex flex-col items-center justify-center" id="start">
 
             <article className="flex flex-col items-center">
 
@@ -77,9 +77,9 @@ const Hero: React.FC = () => {
                 </p>
             </article>
 
-            <article className="flex flex-col items-center justify-center w-full gap-4 mt-4">
+            <article className="flex flex-col items-center justify-center w-full gap-4 mt-4 overflow-hidden">
 
-                <motion.h1 className="font-poppins font-semibold text-gray-400 sm:text-1xl md:text-3xl lg:text-4xl text-center px-4"
+                <motion.h1 className="font-poppins font-semibold text-gray-400 md:text-3xl lg:text-4xl text-center px-4 "
                     ref={tittleRef}
                     style={{ scale, opacity }}
                 >Interfaces That Work on Every Screen

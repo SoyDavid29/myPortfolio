@@ -11,9 +11,10 @@ function App() {
 
   return (
     <>
-      <HelloBtn />
+      
 
       <main className="pt-20">
+        <HelloBtn />
         <Hero />
         <Projects items={ProjectsDb} />
         <AboutMe />
