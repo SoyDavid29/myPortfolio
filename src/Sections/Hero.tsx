@@ -8,6 +8,8 @@ import frame3 from "../assets/frame3.png";
 import frame4 from "../assets/frame4.png";
 import frame5 from "../assets/frame5.png";
 
+import githubIcon from "../assets/githublogo.png";
+
 
 const images = [
     frame1,
@@ -85,7 +87,7 @@ const Hero: React.FC = () => {
                 >Interfaces That Work on Every Screen
                 </motion.h1>
 
-                <a className="bg-yellow-300 rounded-lg shadow-lg flex justify-center items-center font-poppins font-semibold px-4 py-2.5" href="#projects">Take a look!!</a>
+                <a className="bg-yellow-300 rounded-lg shadow-lg flex justify-center items-center font-poppins font-semibold px-4 py-2.5" href="#projects">Take a look<img src={githubIcon} alt="github icon" className="ml-2 h-4.5 w-4.5" /></a>
 
                 <PhotoCard images={images} />
 
