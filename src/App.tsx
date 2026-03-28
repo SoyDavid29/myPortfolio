@@ -1,4 +1,4 @@
-import HelloBtn from "./Components/HelloBtn"
+import NavBar from "./Components/NavBar"
 import Hero from "./Sections/Hero"
 import Projects from "./Sections/Projects"
 import ProjectsDb from "./db/ProjectsDb"
@@ -14,7 +14,7 @@ function App() {
       
 
       <main className="pt-20">
-        <HelloBtn />
+        <NavBar />
         <Hero />
         <Projects items={ProjectsDb} />
         <AboutMe />

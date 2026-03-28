@@ -10,6 +10,9 @@
   --breakpoint-xs: 364px;
   --shadow-custom: 0px 1px 3px #421C1C;
   --color-btn: #00FF1E;
+
+  --breakpoint-xs: 364px;
+  --breakpoint-lg: 932px;
 }
 
 @keyframes wiggle {
