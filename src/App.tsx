@@ -11,14 +11,18 @@ function App() {
 
   return (
     <>
-      
+
 
       <main className="pt-20">
         <NavBar />
         <Hero />
         <Projects items={ProjectsDb} />
-        <AboutMe />
-        <Technologies />
+
+        <div className="lg:flex lg:bg-[#FEE349] lg:px-25">
+          <AboutMe />
+          <Technologies />
+        </div>
+
         <Contact />
         <Footer />
       </main>
