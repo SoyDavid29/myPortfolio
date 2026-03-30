@@ -32,9 +32,16 @@ const Hero: React.FC = () => {
 
 
     return (
-        <section className=" w-full h-auto pt-10 flex flex-col items-center justify-center" id="start">
+        <section className=" w-full h-auto pt-10 flex flex-col items-center justify-center
+        lg:flex-row lg:items-center lg:space-around lg:px-10"
+            id="start"
 
-            <article className="flex flex-col items-center">
+
+
+        >
+
+            <article className="flex flex-col items-center 
+              lg:px-10 lg:-mt-40">
 
                 <div className="relative flex items-center justify-center mb-8">
 
@@ -68,20 +75,21 @@ const Hero: React.FC = () => {
 
                 <h2 className="font-poppins font-semibold text-xl">Jr. Developer</h2>
                 <h2 className="font-poppins font-semibold text-lg text-gray-600">And UX/UI Designer</h2>
+
+                <article className="pt-5 px-7 max-w-2xl lg:px-1">
+                    <p className="font-poppins font-semibold text-center text-lg">
+                        Hello everyone, my name is David Rodriguez
+                    </p>
+                    <p className="font-poppins font-medium text-center leading-relaxed">
+                        I'm a web developer with 3+ years of experience, passionate about crafting powerful, responsive websites and applications. Currently focused on Frontend development and UI/UX Design, using the latest technologies to build experiences that look great on any device
+                    </p>
+                </article>
             </article>
 
-            <article className="pt-5 px-7 max-w-2xl">
-                <p className="font-poppins font-semibold text-center text-lg">
-                    Hello everyone, my name is David Rodriguez
-                </p>
-                <p className="font-poppins font-medium text-center leading-relaxed">
-                    I'm a web developer with 3+ years of experience, passionate about crafting powerful, responsive websites and applications. Currently focused on Frontend development and UI/UX Design, using the latest technologies to build experiences that look great on any device
-                </p>
-            </article>
 
-            <article className="flex flex-col items-center justify-center w-full gap-4 mt-4 overflow-hidden">
+            <article className="flex flex-col items-center justify-center w-full gap-4 mt-4 overflow-hidden  lg:flex-col-reverse ">
 
-                <motion.h1 className="font-poppins font-semibold text-gray-400 md:text-3xl lg:text-4xl text-center px-4 "
+                <motion.h1 className="font-poppins font-semibold text-gray-400 md:text-3xl text-center px-3 lg:px-28 lg:pb-10 "
                     ref={tittleRef}
                     style={{ scale, opacity }}
                 >Interfaces That Work on Every Screen
