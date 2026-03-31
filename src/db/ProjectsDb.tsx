@@ -12,23 +12,24 @@ const ProjectsDb: Project[] = [
 id: 1, 
 img: 'img/ourspace.png', 
 tittle: 'OurSpace', 
-description: `This is my personal brand called OurSpace 
-a website for show my work as front-end developer and 
-UX/UI Designer`, 
+description: `OurSpace started as a simple idea: show up professionally, stay human. 
+It's my personal brand where creativity meets real work.
+`, 
 link: 'https://www.ourspacesite.com'  
 },
 {
 id: 2, 
 img:  'img/berel.png', 
 tittle: 'Pinturas Berel', 
-description: `E-commerce platform. I colaborated to mantein and add new features to this Website`, 
+description: `A collaborative project where I got to contribute new features and fresh styles to a shared design system — 
+putting my university background to work in a real team environment.`, 
 link: 'https://www.berel.com'  
 },
 {
 id: 3, 
 img: 'img/fundacion.png', 
 tittle: 'Fundación MGAS', 
-description: 'A proyect of my Social Service, this website is a landing page where it shows informaction of this fundation', 
+description: 'Some projects you do for the experience. This one I did because it mattered. Working with Fundacion MGAS for my social service was a reminder of why design can be so powerful when it serves a real cause.', 
 link: 'https://fundacionmgas.org.mx/'  
 },
 

@@ -5,7 +5,7 @@ import gmail from "../assets/gmailLogo.png";
 
 const AbautMe: React.FC = () => {
     return (
-        <section className="pt-10 px-10 flex flex-col items-center justify-center gap-5" id="aboutme">
+        <section className="pt-10 px-10 pb-10 flex flex-col items-center justify-center gap-5" id="aboutme">
 
             <div className="w-full h-auto flex flex-col items-center justify-center gap-2">
                 <img className="w-5/12 h-auto" src={perfil} alt="perfil photo" />
