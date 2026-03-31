@@ -23,6 +23,7 @@ export default function PhotoCard({ images }: CarouselProps) {
                 width: "70%",
                 height: "600px",
                 overflow: "hidden",
+                maxWidth: "350px",
             }}
         >
             {images.map((src, i) => {
